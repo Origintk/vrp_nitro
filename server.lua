@@ -4,7 +4,7 @@ local Proxy = module("vrp", "lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 vRPnitro = {}
-Tunnel.bindInterface("nitro",vRPnitro)
+Tunnel.bindInterface("vrp_nitro",vRPnitro)
 	
 function vRPnitro.chamada()
 local user_id = vRP.getUserId(source)
