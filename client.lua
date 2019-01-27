@@ -3,7 +3,7 @@ local Proxy = module("vrp", "lib/Proxy")
 
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
-NITROon = Tunnel.getInterface("nitro")
+NITROon = Tunnel.getInterface("vrp_nitro")
 	
 Citizen.CreateThread(function()
     while true do
